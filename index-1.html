@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>(*"##;& ???)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #000000;
+            color: #ffffff;
+            font-family: 'Courier New', Courier, monospace;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 650px;
+            width: 100%;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin-bottom: 40px;
+        }
+
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        button {
+            flex: 1;
+            padding: 15px 20px;
+            font-family: inherit;
+            font-size: 0.95rem;
+            border: none;
+            cursor: pointer;
+            color: #ffffff;
+            transition: opacity 0.2s;
+        }
+
+        button:hover {
+            opacity: 0.8;
+        }
+
+        .btn-left {
+            background-color: #008000; /* Hijau */
+        }
+
+        .btn-right {
+            background-color: #8b0000; /* Merah */
+        }
+
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <p id="message">I already know everything about you, you like to say rude things, tease your friends, commit sins, and are close to committing adultery. So what is it, is it true?</p>
+
+        <div id="action-buttons" class="buttons">
+            <button class="btn-left" onclick="showResponse()">Yes, is that how I feel too, yes or no?</button>
+            <button class="btn-right" onclick="showResponse()">You're wrong I'm not like that</button>
+        </div>
+    </div>
+
+    <script>
+        function showResponse() {
+            document.getElementById('message').innerText = "Ok, do you want to go back to the past which was so bad?";
+            document.getElementById('action-buttons').classList.add('hidden');
+        }
+    </script>
+
+</body>
+</html>
